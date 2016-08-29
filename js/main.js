@@ -1,12 +1,28 @@
 $(document).ready(function() {
+        //Check if cart is null
+       if (localStorage.getItem('cart') == null || localStorage.getItem('cart') == ""){
+                localStorage.setItem('cart', '[]');
+        }
 	$.ajax({
         url: "categories.json",
         dataType: "json",
         success: function(data) {
         	processData(data);    
         }
-     }); 
+     });
+     updateCartIcon(); 
 });
+
+function updateCartIcon(){
+        var cart = JSON.parse(localStorage.getItem('cart'));
+        var total = 0;
+        for (var i = 0; i < cart.length; i++) {
+                // if (cart[i]!="del") {
+                      total++;  
+                // }   
+        }
+        $("#cart-count").attr("value", total);
+}
 
 function processData(data) {
 	for (var i = 0; i < data.length; i++) {
@@ -44,7 +60,11 @@ function addToCart(id){
         success: function(data) {
                 var prodTitle = data[res[0]].products[res[1]].title
                 var prodPrice = data[res[0]].products[res[1]].price
-                alert(prodTitle + " has been added to the cart with price: "+prodPrice)
+                // alert(prodTitle + " has been added to the cart with price: "+prodPrice)
+                var cart = JSON.parse(localStorage.getItem('cart'));
+                cart.push(data[res[0]].products[res[1]]);
+                localStorage.setItem('cart',JSON.stringify(cart));
+                updateCartIcon();
         }
         });
 }
