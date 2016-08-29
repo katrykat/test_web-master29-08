@@ -1,0 +1,26 @@
+[
+	{
+		"title":"Lighting",
+		"img":"img/1.gif/100x100"
+	},
+	{
+		"title":"Eletricity",
+		"img":"img/2.gif/100x100"
+	},
+	{
+		"title":"Electronics",
+		"img":"img/3.gif/100x100"
+	},
+	{
+		"title":"Connectors",
+		"img":"img/4.gif/100x100"
+	},
+	{
+		"title":"Gardens",
+		"img":"img/5.gif/100x100"
+	},
+	{
+		"title":"Various",
+		"img":"img/6.gif/100x100"
+	}
+]
