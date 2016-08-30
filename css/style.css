@@ -15,7 +15,6 @@
 		{
 		font-family: 'Open Sans', sans-serif;
 		font-size: 18pt;
-		line-height: 15pt;
 		margin: 0 auto 0 auto;
 		text-decoration: none;
 		}
@@ -37,31 +36,16 @@
 			{
 			display: none;
 		    background-color: #f4f5f8;
-		    height: 30px;
-			}
-
-		.menuDivider
-			{
-		    background: #f4f5f8;
-		    width: 1px;
-		    height: 30px;
-		    margin-left: 15px;
-		    float: left;
+		    height: 80px;
 			}
 
 		#dropDown
 			{
 		    margin: 0px auto 0px auto;
 			background: #f4f5f8;
-			height: 30px;
-			line-height: 30px;
+			height: 60px;
+			line-height: 80px;
 			z-index: 1;
-			}
-
-		.homeIconDropDown a:hover
-			{
-			color: #ffffff;
-			text-decoration: none;
 			}
 	 .closeIcon
 			{
@@ -69,6 +53,7 @@
 			position: static;
 			top: 0px;
 			right: 0px;
+			left: 0px;
 			padding: 0px 15px 0px 15px;
 			color: #ffffff;
 			border: 0px;
@@ -80,66 +65,8 @@
 
 		.closeIcon
 			{
-			line-height: 60px;
-			font-size: 2.5em;
-			}
-
-		.dropDownMenu
-			{
-			max-width: 900px;
-		    margin: 0px auto  0px auto;
-			z-index: 2;
-			font-weight: 400;
-			font-size: 16px;
-			width: 90%;
-			background: #f4f5f8;
-			position: static;
-			text-align: center;
-			text-transform: uppercase;
-			}
-
-		.dropDown a
-			{
-			color: #ffffff;
-			text-decoration: none;
-			padding-left: 5px;
-			}
-		 
-		.dropDownMenu li
-			{
-			display: block;
-			padding: 5px 0px 5px 0px;
-			border-top: solid 1px #000;
-			border-bottom: solid 1px #000;
-			z-index: 2;
-			}
-
-		.menusSubmenu
-			{
-			display: block;
-			background: #f4f5f8;
-			z-index: 2;
-			}
-
-		.dropDownMenu li:hover
-			{
-			display: block;
-			background: #f4f5f8;
-			padding: 5px 0px 5px 0px;
-			border-top: solid 1px #f4f5f8;
-			border-bottom: solid 1px #d5d5d7;
-			}
-
-		.dropDownMenu ul li a:hover
-			{
-			color: #000;
-			text-decoration: none;
-			}
-
-		.dropDownMenu a, .dropDownMenu a:hover
-			{
-			text-decoration: none;
-			color: black;
+			line-height:80px;
+			padding-left: 15px;
 			}
 	/*  Drop Down Menu Navigation Ends Here  */
 
@@ -150,15 +77,6 @@
 		    background-color: #f4f5f8;
 		    height: 80px;
 			}
-
-		#mainMenuInnerContainer
-			{
-		    max-width: 900px;
-		    margin: 0 auto  0 auto;
-		   	background-color: #f4f5f8;
-		   	height: 80px;
-			}
-
 		#mainMenuButtons
 			{
 			width: 90%;
@@ -168,24 +86,6 @@
 			align-items: center;
 			flex-wrap: wrap;
 		   	height: 80px;
-			}
-
-		.homeIconStatic a
-			{
-			color: #3599CC;
-		    width: 5%;
-		    float:left;
-		    text-align: center;
-		    padding-left: 15px;
-		    padding-top: 5px;
-		    text-decoration: none;
-			}
-
-		
-		.homeIconStatic a:hover
-			{
-			color: #ffffff;
-			text-decoration: none;
 			}
 
 		.mainMenuButton a
@@ -206,12 +106,13 @@
 
 	/*....................Wide Menu Navigation Ends Here..................*/
 	/*............................Header 2..................................*/
-  #logo{ 
-	  
-	  min-height: 900px;
-	  min-width: 900px; 
-	  padding-left: 15px;
-  }
+			#logo{ 
+			}
+
+			#cart-container{
+				float: right;
+		
+				}
 	/*............................Header 2..................................*/
 
 
@@ -224,41 +125,35 @@
 	
 	/*..............................categories............................*/
 		#categories{
-			display: flex;
+			width: 90%;
+		    display: flex;
 			justify-content: space-around;
 			flex-direction: row;
 			align-items: center;
 			flex-wrap: wrap;
 
-}
-
+			}
     /*..............................categories............................*/
 	/*..............................footer............................*/
-footer {
-	width:900px; 
-	margin:80px; 
-	background-color:#f4f5f8
-	; 
+.footer { 
+	background-color: #7E8083;
+	height: 45px;
+	margin-top:40px; 
+	}
 
-}
-
-#copyright{
-	color:#231E1F; 
+#copy #icon{
+	color:#000000; 
 	font-size:12px; 
 	text-transform: none;
 	}
-#copyright p{
-	margin:5px;
- 	padding: 20px;
-	 }
-#copyright a{ 
-	margin-top:8px;
-	}
-
-#copyright a #icon .icon{
-	width:900px;
-	}
+#copy:hover{
+	color:#000000; 
+	font-size:24px; 
+	text-transform: none;
+	text-shadow: 2px 2px 2px #ffffff;
+	}	
 #one{
+	align-items: right; 
 	margin-right: 3px;
 	float:right;
 	}
