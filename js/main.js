@@ -1,15 +1,23 @@
+
 $(document).ready(function() {
+        if (location.pathname=="/cart.html"){
+                displayCart();
+        }else{ 
+        
+                $.ajax({
+                url: "categories.json",
+                dataType: "json",
+                success: function(data) {
+                        processData(data);    
+                }
+                });
+        }
+
         //Check if cart is null
        if (localStorage.getItem('cart') == null || localStorage.getItem('cart') == ""){
                 localStorage.setItem('cart', '[]');
         }
-	$.ajax({
-        url: "categories.json",
-        dataType: "json",
-        success: function(data) {
-        	processData(data);    
-        }
-     });
+	
      updateCartIcon(); 
 });
 
@@ -67,4 +75,37 @@ function addToCart(id){
                 updateCartIcon();
         }
         });
+}
+
+// Display cart
+function displayCart() {
+        var cart = JSON.parse(localStorage.getItem('cart'));
+        var total = 0;
+        $("#cart-content").empty();
+        for (var i = 0; i < cart.length; i++) {
+                // Adding all the divs, images, titles, etc
+                $("#cart-content").append('<div id="product'+i+'"><h4 id="title'+i+'"/><img id="img'+i+'"/><h5 id="price'+i+'"/><button id="'+i+'" onclick="deleteItem(this);" type="button">Delete</button></div>');
+                // Adding titles
+                $("#title"+i).append(cart[i].title);
+                // Adding img
+                $("#img"+i).attr("src",cart[i].img);
+
+                $("#price"+i).append(cart[i].price);
+                total=parseFloat(cart[i].price) + total;
+                // Adding alt attribute
+                // $("#img"+i).attr("alt",data[i].title+" Section");  
+        }
+        $("#total").empty();
+        $("#total").append("Total: " + total);
+
+   
+}
+
+function deleteItem(item){
+         var cart = JSON.parse(localStorage.getItem('cart'));
+         var id = $(item).attr("id");
+         cart.splice(id, 1);
+         localStorage.setItem('cart',JSON.stringify(cart));
+         displayCart();
+         updateCartIcon();
 }

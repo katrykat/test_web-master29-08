@@ -3,7 +3,7 @@
 		font-size: 100%;
 		box-sizing: border-box;
 		text-decoration: none;
-		background-color: #d5d5d7
+		background-color: #d5d5d7;
 		}
 
 	*, *:before, *:after
@@ -13,12 +13,45 @@
 
 	body
 		{
-		font-family: 'Open Sans', sans-serif;
-		font-size: 18pt;
+		margin: 0 90px 0 90px;	
+		font-family: 'Arial, Helvetica, sans-serif';
+		font-size: 28pt;
 		margin: 0 auto 0 auto;
 		text-decoration: none;
+		
 		}
+	/*................content................*/
+.about{ 
+	margin:0 90px 0 90px;
+}	
 
+.about h1,h2,h3
+		{
+	    font-family:'Arial, Helvetica, sans-serif';
+		font-size:26pt;  
+		font-style: italic;
+		text-align:justify;
+		margin:70px 0 70px 0px;
+		}	
+	
+.about p{  
+	    font-family:'Arial, Helvetica, sans-serif';
+		font-size: 26px;  
+		text-align: justify;
+		float:right;  
+	    margin: 90px;
+		}	
+.about img1{
+	    width: 50%;
+		height: auto;
+	    float:left; 
+}	
+
+.about img2{
+	    width: 70%;
+		height: auto;
+        align-items: center;
+}
 	.cf:before, .cf:after
 		{
 	    content: " ";
@@ -106,8 +139,16 @@
 
 	/*....................Wide Menu Navigation Ends Here..................*/
 	/*............................Header 2..................................*/
-			#logo{ 
+		.header2{
+			width: 96%;
+			max-width: 960px;
+			margin: 0 auto;
+            }
+		logo {
+			width: 100%;
+			height: auto;
 			}
+			
 
 			#cart-container{
 				float: right;
@@ -117,14 +158,9 @@
 
 
 
-
-
-
-
-
-	
 	/*..............................categories............................*/
 		#categories{
+			margin: 0 90px 0 90px;
 			width: 90%;
 		    display: flex;
 			justify-content: space-around;
@@ -139,8 +175,7 @@
 	background-color: #7E8083;
 	height: 45px;
 	margin-top:40px; 
-	}
-
+    }
 #copy #icon{
 	color:#000000; 
 	font-size:12px; 
