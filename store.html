@@ -15,14 +15,12 @@
  <!------------------------------------------------Header ----------------------------------------------->  
      <!--  Drop Down Menu Navigation Starts Here  -->
 	 <div id="dropDownContainer">
-        <div class="homeIconDropDown">
-            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-        </div>
         <div class="menuDivider"></div>
         <div id="dropDown">
-            <button class="closeIcon"><img src="img/store.png" height="32" width="32"></button>
-            <button class="closeIcon"><img src="img/about.png" height="32" width="32"></img></button>
-			<button class="closeIcon"><img src="img/contact.png" height="32" width="32"></img></button>
+            <button class="closeIcon"><img src="img/home.png" height="32" width="32"><a href="index.html"></img></button>
+            <button class="closeIcon"><img src="img/about.png" height="32" width="32"><a href="about.html"></img></button>
+            <button class="closeIcon"><img src="img/store.png" height="32" width="32"><a href="store.html"></img></button>
+			<button class="closeIcon"><img src="img/contact.png" height="32" width="32"><a href="contact.html"></img></button>      
 						
         </div>
     </div>
@@ -34,14 +32,12 @@
 <!--  Wide Menu Navigation Starts Here  -->
     <div id="mainMenuOuterContainer">
         <div id="mainMenuInnerContainer">
-            <div class="homeIconStatic">
-                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-            </div>
             <div class="menuDivider"></div>
                 <nav id="mainMenuItems">
                     <ul id="mainMenuButtons">
-						<li class="mainMenuButton"><a href="index.html">Store</a></li>
+                        <li class="mainMenuButton"><a href="index.html">Home</a></li>
                         <li class="mainMenuButton"><a href="about.html">About Us</a></li>
+						<li class="mainMenuButton"><a href="store.html">store</a></li>
 						<li class="mainMenuButton"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -52,8 +48,9 @@
 	
 <!--  Wide Menu Navigation Ends Here  -->
 <!------------------------------------------------Header 2 -----------------------------------------------> 
-		<div id="logo">
-          <img src="img/logo.gif" width="40%" >
+	<div class="header2">	
+        <div id="logo">
+          <img src="img/logo.gif" width="40%"/>
         </div>	
         <div id="cart-container">
             <div id="cart"><input type="image" src="img/car.gif" height"32" width="32"></input>
@@ -61,27 +58,27 @@
             </div>
             <span id="itemCount"></span>
         </div>
+    </div>   
   
 <!------------------------------------------------Categories -----------------------------------------------> 
 	
 <div id="categories"></div>
 
 <!----------------------------------------------Footer------------------------------------------------------>
-<footer id="copyright" class="clear">
-        <a class="fl_right">McKenna Distributors LTD &copy; - 2016 </a>
-          <div id="icon">    
-              <p class="fl_left">  
-                  <div id="one">
-                    <i class="fa fa-facebook-official" aria-hidden="true" a href="https://www.skype.com/"></i>
-                  </div> 
-                  <div id="two">
-                    <a href="https://www.outlook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-                  </div> 
-                  <div id="tree">
-                    <a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-                  </div>  
-              </p class="fl_right">
-          </div> 
+
+<footer class="footer">
+        <a id="copy">McKenna Distributors LTD &copy; - 2016 </a>
+        <a id="icon">  
+            <div id="one">
+                <a href="https://www.facebook.com"><img src="img/fb.png" height"32" width="32"/></i>
+            </div> 
+            <div id="two">
+                <a href="https://www.twitter.com"><img src="img/tw.png" height"32" width="32"/></i>
+            </div> 
+            <div id="tree">
+                <a href="https://www.outlook.com"><img src="img/mail.png" height"38" width="38"/></i>
+            </div>  
+        </a>            
 </footer>
 </body>
 </html>
