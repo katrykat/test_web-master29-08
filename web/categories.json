@@ -3,15 +3,15 @@
 		"title":"Lighting",
 		"products":[
 			{
-				"title": "Desk Flex Lamp",
-				"desc": "The most beutiful design",
-				"img": "img/img/01.gif",
-				"price": "11.15"
+				"title": "Small Bulb",
+				"desc": "The Smallest bulb ever",
+				"img": "img/img/1.gif",
+				"price": "3.15"
 			},
 			{
-				"title": "LED Bulb",
-				"desc": "Small changes that help save your money",
-				"img": "img/img/02.gif",
+				"title": "Med Bulb",
+				"desc": "The average size bulb",
+				"img": "img/img/2.gif",
 				"price": "2.05"
 			}
 		]
@@ -20,16 +20,16 @@
 		"title":"Eletricity",
 		"products":[
 			{
-				"title": "MCBs",
-				"desc": "Quality and capacity",
-				"img": "img/img/03.gif",
-				"price": "8.15"
+				"title": "Thin Cable",
+				"desc": "The thinest cable ever",
+				"img": "img/img/3.gif",
+				"price": "3.15"
 			},
 			{
-				"title": "Extension",
-				"desc": "Capacity for 4 connections",
-				"img": "img/img/04.gif",
-				"price": "5.05"
+				"title": "Normal Cable",
+				"desc": "The average cable",
+				"img": "img/img/4.gif",
+				"price": "2.05"
 			}
 			
 		]
@@ -38,16 +38,16 @@
 		"title":"Electronics",
 		"products":[
 			{
-				"title": "Data connection cover",
-				"desc": "1 entrance, Available in more colors",
-				"img": "img/img/05.gif",
-				"price": "0.95"
+				"title": "Thin Cable",
+				"desc": "The thinest cable ever",
+				"img": "img/img/5.gif",
+				"price": "3.15"
 			},
 			{
-				"title": "Data connection cover",
-				"desc": "6 entrances, Available in more colors",
-				"img": "img/img/06.gif",
-				"price": "1.15"
+				"title": "Normal Cable",
+				"desc": "The average cable",
+				"img": "img/img/6.gif",
+				"price": "2.05"
 			}
 			
 		]
@@ -58,13 +58,13 @@
 			{
 				"title": "Thin Cable",
 				"desc": "The thinest cable ever",
-				"img": "img/img/07.gif",
+				"img": "img/img/7.gif",
 				"price": "3.15"
 			},
 			{
 				"title": "Thick Cable",
 				"desc": "The thickest cable ever",
-				"img": "img/img/08.gif",
+				"img": "img/img/8.gif",
 				"price": "6.45"
 			}
 		]
@@ -75,13 +75,13 @@
 			{
 				"title": "Thin Cable",
 				"desc": "The thinest cable ever",
-				"img": "img/img/09.gif",
+				"img": "img/img/9.gif",
 				"price": "3.15"
 			},
 			{
 				"title": "Thick Cable",
 				"desc": "The thickest cable ever",
-				"img": "img/img/010.gif",
+				"img": "img/img/10.gif",
 				"price": "6.45"
 			}
 		]
@@ -92,13 +92,13 @@
 			{
 				"title": "Thin Cable",
 				"desc": "The thinest cable ever",
-				"img": "img/img/011.gif",
+				"img": "img/img/11.gif",
 				"price": "3.15"
 			},
 			{
 				"title": "Normal Cable",
 				"desc": "The average cable",
-				"img": "img/img/012.gif",
+				"img": "img/img/12.gif",
 				"price": "2.05"
 			}
 		]
