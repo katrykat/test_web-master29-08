@@ -15,43 +15,22 @@
 		{
 		margin: 0 90px 0 90px;	
 		font-family: 'Arial, Helvetica, sans-serif';
-		font-size: 28pt;
+		font-size: 3.0vh;
 		margin: 0 auto 0 auto;
 		text-decoration: none;
 		
 		}
-	/*................content................*/
-.about{ 
-	margin:0 90px 0 90px;
-}	
+		
+	h1 {
+  		font-size: 5.9vw;
+		}
+	h2 {
+  		font-size: 3.0vh;
+	   }
+	p {
+  		font-size: 2vmin;
+	  }
 
-.about h1,h2,h3
-		{
-	    font-family:'Arial, Helvetica, sans-serif';
-		font-size:26pt;  
-		font-style: italic;
-		text-align:justify;
-		margin:70px 0 70px 0px;
-		}	
-	
-.about p{  
-	    font-family:'Arial, Helvetica, sans-serif';
-		font-size: 26px;  
-		text-align: justify;
-		float:right;  
-	    margin: 90px;
-		}	
-.about img1{
-	    width: 50%;
-		height: auto;
-	    float:left; 
-}	
-
-.about img2{
-	    width: 70%;
-		height: auto;
-        align-items: center;
-}
 	.cf:before, .cf:after
 		{
 	    content: " ";
@@ -64,7 +43,7 @@
 		}
 
 
-	/*  Drop Down Menu Navigation Ends Here  */
+	/*........................Drop Down Menu.......................*/
 		#dropDownContainer
 			{
 			display: none;
@@ -101,10 +80,10 @@
 			line-height:80px;
 			padding-left: 15px;
 			}
-	/*  Drop Down Menu Navigation Ends Here  */
+	/*.......................................Drop Down Menu Navigation.......................................*/
 
 
-	/*  Wide Menu Navigation Starts Here  */
+	/*.................................Wide Menu Navigation Starts Here......................................*/
 		#mainMenuOuterContainer
 			{
 		    background-color: #f4f5f8;
@@ -137,7 +116,7 @@
 		    color: #3599CC;
 			}
 
-	/*....................Wide Menu Navigation Ends Here..................*/
+	/*....................................Wide Menu Navigation.....................................*/
 	/*............................Header 2..................................*/
 		.header2{
 			width: 96%;
@@ -160,7 +139,8 @@
 
 	/*..............................categories............................*/
 		#categories{
-			margin: 0 90px 0 90px;
+			margin: 90px 90px 90px 90px;
+			padding: 20px;
 			width: 90%;
 		    display: flex;
 			justify-content: space-around;
@@ -170,6 +150,51 @@
 
 			}
     /*..............................categories............................*/
+	/*................about us................*/
+	.about{ 
+		margin:0 90px 0 90px;
+	}	
+
+	.about h1,h2,h3
+			{
+			font-family:'Arial, Helvetica, sans-serif';
+			font-size: 5.0vw;
+			font-style: italic;
+			text-align:center;
+			margin:70px 0 70px 0px;
+			}	
+		
+	.about p{  
+			font-family:'Arial, Helvetica, sans-serif';
+			font-size: 3.0vh;  
+			text-align: justify; 
+			margin: 30px;
+			}	
+      .img0{    
+			width: 10%;
+			height: auto;
+			align-content:center; 
+			}
+		.img1{
+			width: 100%;
+			height: auto;
+			text-align:center; 		
+		    }
+     /*............................about us..........................*/
+	 /*............................index.............................*/
+	 	.container img{	
+			height: auto; 
+			width:20%;
+		    display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			align-content:center; 
+			float:right;	
+			flex-wrap: wrap;
+		    }
+     /*............................index.............................*/		
+
+
 	/*..............................footer............................*/
 .footer { 
 	background-color: #7E8083;
